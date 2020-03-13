@@ -31,7 +31,7 @@ public class ViewTypeActivity extends AppCompatActivity {
 		ReversedLogoAdapter adapter = new ReversedLogoAdapter(this, teams);
 		teamsView.setAdapter(adapter);
 
-		RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+		RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,2);
 		teamsView.setLayoutManager(layoutManager);
 	}
 }
